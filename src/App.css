@@ -1,0 +1,89 @@
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #adabab;
+}
+
+.container{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: darkcyan;
+    margin: 1%;
+    border: 1px solid;
+    padding: 0.5%;  
+    min-height: 92.5vh;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+.container h1{
+    font: 1.8rem;
+    animation: moveInLeft 2s;
+    
+}
+
+.container-bio {
+    font-size: 1.8rem;
+}
+
+.container-bio::after {
+    animation: moveInLeft 2s;
+    animation-delay: 3s;
+}
+
+.container-input {
+    width: 210px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+button {
+    width: 100px;
+    height: 28px; 
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2); /*Colocando sobra: box-shadow recebe valores, o primeiro é na direção X, o segundo na direção Y e o terceiro valor é o desfoque que queremos ver*/
+    cursor: pointer;
+}
+    
+button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}  
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+
+}
+
